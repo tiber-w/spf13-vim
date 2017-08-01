@@ -1,0 +1,9 @@
+set guifont=Andale_Mono:h16,Menlo:h16,Consolas:h16,Courier_New:h16
+color desert
+set wrap
+:map <C-t> :tabedit .\
+if has('win32') || has('win64')
+  if has("multi_byte")
+    set fileencodings=utf-8,utf-16le,chinese,cp1252,iso-8859-15
+  endif
+endif
